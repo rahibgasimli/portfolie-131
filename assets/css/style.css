@@ -1,6 +1,14 @@
 @import url("./reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root{
+    --qara-reng: #000;
+    --ag-reng: #fff;
+    --spandaki-reng: #FF8A56;
+}
+
+
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -16,7 +24,7 @@ a{
     text-decoration: none;
 }
 .header a {
-    color: black;
+    color: var(--qara-reng) ;
     padding: 2px;
 }
 
@@ -24,11 +32,15 @@ a{
     display: none;
 }
 
+section.introduction left-side span{
+    color: var(--spandaki-reng) ;
+}
+
 
 /* MEDIA QUERY */
 
 @media(max-width:768px){
-    .header{
+    header.header{
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -36,18 +48,102 @@ a{
     .nav-links{
         display: none;
         font-size: 24px;
-        cursor: pointer;
+        
     }
     
     .fa-bars{
         display: block;
+        cursor: pointer !important;
+    }
+
+    .introduction {
+        display: flex;
+        justify-content: space-between;
     }
 
 }
 
 @media(max-width:576px){
-    .header {
+    header.header {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
+
+/* INTRODUCTION BASLAYIR */
+    .teqdimat{
+        display: flex;
+        padding-left: 113px;
+        padding-right: 112px;
+    }
+
+    .left-side{
+        padding-top: 117px;
+    }
+
+    .left-side h1{
+        font-weight:700;
+        font-size:72px;
+        letter-spacing: 2px;
+    }
+
+    .left-side h1 span{
+        color: var(--spandaki-reng);
+    }
+
+    .left-side p{
+        font-weight: 400;
+        font-size: 22px;
+        padding-top: 34px;
+        padding-bottom: 24px;
+        color: #666666;
+    }
+
+    .right-side{
+        padding-top: 70px;
+        padding-right: 112px;
+    } 
+
+    .right-side img {
+        width: 100%;
+    } */
+
+
+    .teqdimat button{
+        width: 151px;
+        height: 58px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 0px;
+    }
+
+    .teqdimat a{
+        padding-left: 14.3px;
+        color: black;
+    }
+    @media(max-width:1180px){
+        .teqdimat {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+
+    @media(max-width:1080px){
+        .teqdimat{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    @media(max-width:992px){
+        .teqdimat h1{
+            font-size: 42px;
+        }
+    }
+
+    @media(max-width:768px){
+        .teqdimat{
+            flex-direction: column;
+        }
+    }
+/* INTRODUCTION BITIR */

@@ -172,15 +172,11 @@ section.introduction left-side span{
 }
 
 @media(max-width:768px){
-    /* .trusted-company:nth-child(3), */
-    /* .trusted-company:nth-child(4){ */
-        /* display: none; */
-    .trusted-company:nth-child(even){
+    .trusted-company:nth-child(3),
+    .trusted-company:nth-child(4){
         display: none;
     }
-    
-    }
-
+}
 @media(max-width:576px){
     .trusted-company:nth-child(2){
         display: none;

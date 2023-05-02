@@ -5,6 +5,7 @@
     --qara-reng: #000;
     --ag-reng: #fff;
     --spandaki-reng: #FF8A56;
+    --servicedeki-reng:#FF5E69;
 }
 
 
@@ -182,5 +183,87 @@ section.introduction left-side span{
         display: none;
     }
 }
-
 /* TRUSTED SECTION END */
+/* SERVICES SECTION START */
+
+.services-section{
+    padding-left: 171px;
+    padding-right: 171px;
+    padding-top: 79.73px;
+}
+
+.services-section h6,
+.services-section h1 {
+    text-align: center;
+}
+.services-section h6{
+text-transform: uppercase;
+color: var(--servicedeki-reng);
+font-weight: 700;
+font-size: 22px;
+letter-spacing: 4px;
+padding-bottom: 20px;
+padding-top: 76px;
+}
+.services-section h1{
+font-size: 54px;
+font-weight: 700;
+line-height: 59.4px;
+letter-spacing: 1px;
+}
+
+
+.services-section ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.services-cards-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 117.95px;
+    flex-wrap: wrap;
+    text-align:left;
+}
+.card{
+    min-width:252px;
+    width: 252px;
+}
+
+.card h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26.4px;
+    padding-top: 39.17px;
+    padding-bottom: 25px;
+}
+.card p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+    padding-bottom: 21PX;
+}
+.card ul li {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-bottom: 10px;
+}
+@media(max-width:768px){
+    .services-section{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media(max-width:576px){
+    .services-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+
+/* SERVICES SECTION END */

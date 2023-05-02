@@ -25,7 +25,7 @@ a{
 }
 .header a {
     color: var(--qara-reng) ;
-    padding: 2px;
+    padding: 15px;
 }
 
 .fa-bars{
@@ -75,6 +75,7 @@ section.introduction left-side span{
         display: flex;
         padding-left: 113px;
         padding-right: 112px;
+        /* width: 100%; */
     }
 
     .left-side{
@@ -84,7 +85,6 @@ section.introduction left-side span{
     .left-side h1{
         font-weight:700;
         font-size:72px;
-        letter-spacing: 2px;
     }
 
     .left-side h1 span{
@@ -99,14 +99,23 @@ section.introduction left-side span{
         color: #666666;
     }
 
+    .left-side button{
+        width: 151px;
+        height: 58px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        background-color: #000;
+        color: #FFF;
+    }
+
     .right-side{
         padding-top: 70px;
-        padding-right: 112px;
     } 
 
     .right-side img {
         width: 100%;
-    } */
+    } 
 
 
     .teqdimat button{
@@ -147,3 +156,35 @@ section.introduction left-side span{
         }
     }
 /* INTRODUCTION BITIR */
+/* TRUSTED SECTION START */
+.trusted-section h6{
+    text-align: center;
+    padding-top: 77px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.trusted-companies{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+}
+
+@media(max-width:768px){
+    /* .trusted-company:nth-child(3), */
+    /* .trusted-company:nth-child(4){ */
+        /* display: none; */
+    .trusted-company:nth-child(even){
+        display: none;
+    }
+    
+    }
+
+@media(max-width:576px){
+    .trusted-company:nth-child(2){
+        display: none;
+    }
+}
+
+/* TRUSTED SECTION END */

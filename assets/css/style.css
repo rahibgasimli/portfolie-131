@@ -1,6 +1,13 @@
 @import url("./reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root{
+    --qara-reng: #000;
+    --ag-reng: #fff;
+    --spandaki-reng: #FF8A56;
+    --servicedeki-reng:#FF5E69;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -16,19 +23,23 @@ a{
     text-decoration: none;
 }
 .header a {
-    color: black;
-    padding: 2px;
+    color: var(--qara-reng) ;
+    padding: 15px;
 }
 
 .fa-bars{
     display: none;
 }
 
+section.introduction left-side span{
+    color: var(--spandaki-reng) ;
+}
+
 
 /* MEDIA QUERY */
 
 @media(max-width:768px){
-    .header{
+    header.header{
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -36,18 +47,265 @@ a{
     .nav-links{
         display: none;
         font-size: 24px;
-        cursor: pointer;
+        
     }
     
     .fa-bars{
         display: block;
+        cursor: pointer !important;
+    }
+
+    .introduction {
+        display: flex;
+        justify-content: space-between;
     }
 
 }
 
 @media(max-width:576px){
-    .header {
+    header.header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .teqdimat .left-side{
+        padding-top: 40px;
+    }
+}
+
+/* INTRODUCTION BASLAYIR */
+    .teqdimat{
+        display: flex;
+        padding-left: 113px;
+        padding-right: 112px;
+        /* width: 100%; */
+    }
+
+    .left-side{
+        padding-top: 117px;
+    }
+
+    .left-side h1{
+        font-weight:700;
+        font-size:72px;
+    }
+
+    .left-side h1 span{
+        color: var(--spandaki-reng);
+    }
+
+    .left-side p{
+        font-weight: 400;
+        font-size: 22px;
+        padding-top: 34px;
+        padding-bottom: 24px;
+        color: #666666;
+    }
+
+    .left-side button{
+        width: 151px;
+        height: 58px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        background-color: #000;
+        color: #FFF;
+    }
+
+    .right-side{
+        padding-top: 70px;
+    } 
+
+    .right-side img {
+        width: 100%;
+    } 
+
+
+    .teqdimat button{
+        width: 151px;
+        height: 58px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 0px;
+    }
+
+    .teqdimat a{
+        padding-left: 14.3px;
+        color: black;
+    }
+    @media(max-width:1180px){
+        .teqdimat {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+
+    @media(max-width:1080px){
+        .teqdimat{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    @media(max-width:992px){
+        .teqdimat h1{
+            font-size: 42px;
+        }
+    }
+
+    @media(max-width:768px){
+        .teqdimat{
+            flex-direction: column;
+        }
+    }
+/* INTRODUCTION BITIR */
+/* TRUSTED SECTION START */
+.trusted-section h6{
+    text-align: center;
+    padding-top: 77px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.trusted-companies{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+}
+
+@media(max-width:768px){
+    .trusted-company:nth-child(3),
+    .trusted-company:nth-child(4){
+        display: none;
+    }
+}
+@media(max-width:576px){
+    .trusted-company:nth-child(2){
+        display: none;
+    }
+}
+/* TRUSTED SECTION END */
+/* SERVICES SECTION START */
+
+.services-section{
+    padding-left: 171px;
+    padding-right: 171px;
+    padding-top: 79.73px;
+}
+
+.services-section h6,
+.services-section h1 {
+    text-align: center;
+}
+.services-section h6{
+text-transform: uppercase;
+color: var(--servicedeki-reng);
+font-weight: 700;
+font-size: 22px;
+letter-spacing: 4px;
+padding-bottom: 20px;
+padding-top: 76px;
+}
+.services-section h1{
+font-size: 54px;
+font-weight: 700;
+line-height: 59.4px;
+letter-spacing: 1px;
+}
+
+
+.services-section ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.services-cards-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 117.95px;
+    flex-wrap: wrap;
+    text-align:left;
+}
+.card{
+    min-width:252px;
+    width: 252px;
+}
+.card h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.4px;
+    padding-top: 39.17px;
+    padding-bottom: 25px;
+}
+.card p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+    padding-bottom: 21PX;
+}
+.card ul li {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-bottom: 10px;
+}
+@media(max-width:768px){
+    .services-section{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media(max-width:576px){
+    .services-section{
         padding-left: 20px;
         padding-right: 20px;
     }
 }
+
+/* SERVICES SECTION END */
+/* OVERLAY MENU START */
+.overlay-menu{
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    height: 100%;
+    width:0;
+    overflow-x: hidden;
+}
+.active{
+    width: 100%;
+}
+.overlay-menu a{
+    color: #aaa;
+    padding-top: 14px;
+    transition: all 1.2s ease;
+}
+.overlay-menu a:hover{
+    color: #fff;
+    font-size: 40px;
+    transform: translateX(15px);
+}
+    
+
+.nav-links-overlay-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-size: 34px;
+}
+
+
+.fa-xmark{
+    color: #fff;
+    position: absolute;
+    right: 45px;
+    top: 45px;
+    font-size: 30px;
+}
+
+
+
+
+/* OVERLAY MENU END */

@@ -522,52 +522,100 @@ span .metadata {
 
 /* PRODUCT DESIGNER START */
 
+.product-designer{
+    padding-left: 113px;
+    padding-right: 112px;
+}
+
 .product-designer .top-side{
     display: flex;
     justify-content: space-between;
 }
 
-.product-designer .top-side .left-side{
+
+.product-designer .left-side{
     padding-top: 76.27px;
-    padding-left: 113px;
+}
+
+.product-designer .left-side h2{
+    text-transform: uppercase;
+    color: var(--spandaki-reng);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 4px;
+}
+
+.product-designer .left-side h1{
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 59px;
+    letter-spacing: 1px;
 }
 
 .product-designer .top-side p {
     padding-top: 85.27px;
-    padding-right: 112px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #666;
 }
 
-.product-designer .top-side .left-side h1{
-    padding-top: 15px;
+.designer-photos{
+    padding-top: 115px;
+    padding-bottom: 79.66px;
 }
 
-.product-designer .designer-photos {
+
+.product-designer .designer-photos{
     display: flex;
-    padding-left: 113px;
-    padding-right: 112px;
-    padding-top: 122px;
-    width: 100%;
+    height: 626px;
 }
 
-.product-designer .designer-photos img{
-    width: 100%;
+.left-photo , .right-photos , .center-photo{
+    height: 100%;
 }
 
-.product-designer .designer-photos .left-photo{
-    width: 338px;
+.left-photo img , .center-photo img {
+    height: 100%;
 }
 
-.product-designer .designer-photos .center-photo img{
-    width: 100%;
+.center-photo{
+   margin: 0 16px;
 }
 
-.product-designer .designer-photos .right-photos img{
-    width: 338px;
+.right-photo-top , .right-photo-bottom {
     height: 305px;
+}
+.right-photo-top img , .right-photo-bottom img{
+    width: 100%;
+} 
 
+.right-photo-top{
+    margin-bottom: 16px;
 }
-.product-designer .designer-photos .right-photos{
-    display: flex;
-    flex-direction: column;
+
+@media(max-width:576px){
+    .right-photos , .center-photo{
+        display: none;
+    }
+    
+    .product-designer{
+        padding-left: 30px;
+    }
+
+    .product-designer .top-side{
+        text-align: center;
+        flex-direction: column;
+        padding-left: 60px;
+    }
 }
+
+@media(max-width:768px){
+    .designer-photos .left-photo {
+        display: none;
+    }
+}
+
 /* PRODUCT DESIGNER END */

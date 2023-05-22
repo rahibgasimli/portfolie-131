@@ -8,9 +8,22 @@
     --servicedeki-reng:#FF5E69;
 }
 
+*{
+    outline: 1px solid red;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+@media(min-width:1800px){
+    .container{
+        max-width: 2000px;
+    }
+}
+
+
+
 
 header.header{
     display: flex;
@@ -77,10 +90,10 @@ section.introduction left-side span{
         display: flex;
         padding-left: 113px;
         padding-right: 112px;
-        /* width: 100%; */
+        justify-content: space-between;
     }
 
-    .left-side{
+    .teqdimat .left-side{
         padding-top: 117px;
     }
 
@@ -111,11 +124,11 @@ section.introduction left-side span{
         color: #FFF;
     }
 
-    .right-side{
+    .teqdimat .right-side{
         padding-top: 70px;
     } 
 
-    .right-side img {
+    .teqdimat .right-side img {
         width: 100%;
     } 
 
@@ -573,12 +586,22 @@ span .metadata {
     height: 626px;
 }
 
-.left-photo , .right-photos , .center-photo{
+.left-photo  , .center-photo{
     height: 100%;
+}
+
+.left-photo{
+    width: 300px;
+}
+
+.right-photos {
+    height: 626px;
 }
 
 .left-photo img , .center-photo img {
     height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .center-photo{
@@ -587,9 +610,12 @@ span .metadata {
 
 .right-photo-top , .right-photo-bottom {
     height: 305px;
+    width: 300px;
 }
 .right-photo-top img , .right-photo-bottom img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 } 
 
 .right-photo-top{
@@ -694,15 +720,22 @@ span .metadata {
 .right-edu .card-metadata{
     display: flex;
     justify-content: space-between;
+    padding-right: 40px;
 }
 
 .right-edu .card-edu {
     display: flex;
 }
 
+
+.right-edu .card-edu .job-logo{
+    flex-basis: 8%;
+}
+
 .right-edu .card-edu .job-text{
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .right-edu .card-edu .job-text img{
@@ -736,7 +769,104 @@ span .metadata {
     padding-bottom: 72px;
 }
 
-
-
-
 /* EDU SECTION END */
+
+
+/* THE STREET SECTION START */
+
+.thestreet .top-side{
+    padding-left: 113px;
+}
+
+
+.thestreet .top-side h3{
+    padding-top: 76.34px ;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4353FF;
+}
+
+
+.thestreet .top-side h1{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 59px;
+    letter-spacing: 1px;
+}
+
+
+.thestreet .teqdimatj .left-side{
+   padding-left: 113px;
+   padding-top: 85px;
+   width: 485px;
+   height: 450px;
+}
+
+.thestreet .teqdimatj .left-side img{
+    width: 100%;
+}
+
+.thestreet .teqdimatj{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.thestreet .teqdimatj .right-side img{
+    padding-right: 651px;
+    padding-bottom: 32px;
+}
+
+.thestreet .teqdimatj .right-side  p{
+    padding-right:131px ;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+}
+
+.thestreet .teqdimatj .right-side .bottom-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.thestreet .teqdimatj .right-side .bottom-text h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.thestreet .teqdimatj .right-side .bottom-text h6{
+    padding-top: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.thestreet .teqdimatj .right-side .bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 112px;
+    padding-top: 107px;
+}
+
+.thestreet .teqdimatj .right-side .bottom .buttons button{
+    width: 54px;
+    height: 54px;
+    background-color: #000;
+    color: white;
+    font-size: 19px;
+    border-radius: 0;
+}
+
+.thestreet .teqdimatj .right-side{
+    /* padding-left: 142px; */
+}
+
+
+/* THE STREET SECTION END */

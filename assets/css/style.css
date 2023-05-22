@@ -619,3 +619,124 @@ span .metadata {
 }
 
 /* PRODUCT DESIGNER END */
+
+/* EDU SECTION START */
+
+.education{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.left-edu{
+    width: 564.73px;
+    padding-left: 112.5px;
+    width: 50%;
+}
+
+.left-edu h2{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 83px;
+    padding-top: 74.34px;
+}
+
+.left-edu .card-edu .card-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 9px;
+}
+
+.left-edu .card-edu h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.left-edu .card-edu .card-metadata{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-right: 42px;
+}
+
+.left-edu .card-edu{
+    padding-bottom: 72px;
+}
+
+.right-edu{
+    width: 564.73px;
+    padding-right:112px;
+    padding-left: 54.25px;
+    width: 50%;
+}
+
+.right-edu h2{
+    padding-top: 74.34px;
+    padding-bottom: 83px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+
+
+
+.right-edu .card-top .job-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-edu .card-metadata{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-edu .card-edu {
+    display: flex;
+}
+
+.right-edu .card-edu .job-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-edu .card-edu .job-text img{
+    width: 12.52px;
+}
+
+.right-edu .card-edu .job-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-edu .card-edu .job-text h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    padding-bottom: 9px;
+}
+
+.right-edu .card-edu .job-text span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.right-edu .card-edu .job-text{
+    padding-left: 20px;
+}
+
+.right-edu .card-edu{
+    padding-bottom: 72px;
+}
+
+
+
+
+/* EDU SECTION END */

@@ -8,9 +8,9 @@
     --servicedeki-reng:#FF5E69;
 }
 
-*{
+/* *{
     outline: 1px solid red;
-}
+} */
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -774,10 +774,13 @@ span .metadata {
 
 /* THE STREET SECTION START */
 
+.thestreet{
+    padding-bottom: 160px;
+}
+
 .thestreet .top-side{
     padding-left: 113px;
 }
-
 
 .thestreet .top-side h3{
     padding-top: 76.34px ;
@@ -789,7 +792,6 @@ span .metadata {
     color: #4353FF;
 }
 
-
 .thestreet .top-side h1{
     padding-top: 20px;
     font-weight: 700;
@@ -798,12 +800,10 @@ span .metadata {
     letter-spacing: 1px;
 }
 
-
 .thestreet .teqdimatj .left-side{
    padding-left: 113px;
    padding-top: 85px;
-   width: 485px;
-   height: 450px;
+  min-width: 486px;
 }
 
 .thestreet .teqdimatj .left-side img{
@@ -814,9 +814,6 @@ span .metadata {
     display: flex;
     justify-content: space-between;
 }
-
-
-
 
 .thestreet .teqdimatj .right-side img{
     padding-right: 651px;
@@ -865,8 +862,170 @@ span .metadata {
 }
 
 .thestreet .teqdimatj .right-side{
-    /* padding-left: 142px; */
+    padding-left: 142px;
+}
+
+/* THE STREET SECTION END */
+
+
+/* FAQ SECTION START */
+
+.faq{
+    background-color: #000;
+    /* padding-top: 180px; */
+}
+
+.faq-top{
+    text-align: center;
+}
+
+.faq-top h6{
+    color: var(--spandaki-reng);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-top: 78px;
+    padding-bottom: 20px;
+}
+
+.faq-top h1{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 59px;
+    letter-spacing: 1px;
+    color: #FFF;
 }
 
 
-/* THE STREET SECTION END */
+.faq-left{
+    padding-top: 150px;
+}
+
+.faq-card{
+    padding-top: 30.18px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7); ;
+    padding-bottom: 49.82px;
+}
+
+
+.faq-card h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    color: #FFF;
+}
+
+.faq-bottom{
+    display: flex;
+    padding-left: 113px;
+    padding-right: 112.5px;
+}
+
+.faq-right{
+    padding-top: 150px;
+    padding-left: 53.64px;
+}
+
+/* FAQ SECTION END */
+
+
+/* FOOTER START */
+
+footer{
+    background-color: #000;
+}
+
+.footer-top{
+    padding-left: 113px;
+}
+
+.footer-top h1{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 59px;
+    letter-spacing: 1px;
+    color: #FFF;
+    padding-top: 178.34px;
+}
+
+.footer-top h2{
+    padding-top: 9px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 59px;
+    letter-spacing: 0.5px;
+    color: #3C46FF;
+}
+
+.footer-left{
+    padding-left: 114.95px;
+    padding-top: 102.98px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666666;
+    padding-top: 17px;
+}
+
+.footer-left .mail{
+    padding-top: 10px;
+}
+
+.footer-left img{
+    width: 195px;
+}
+
+.footer-left span img {
+    width: 29.63px;
+    padding-right: 6.37px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right{
+    display: flex;
+    padding-right: 112px;
+    padding-top: 100px;
+}
+
+.footer-right .right1{
+    padding-right: 123px;
+}
+
+.footer-right .right2{
+    padding-right: 109px;
+}
+
+.footer-right h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFF;
+    padding-bottom: 40px;
+}
+
+.footer-metadata{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8A95AD;
+    padding-left: 113px;
+    padding-top: 140px;
+    padding-bottom: 20px;
+}
+
+/* FOOTER END */

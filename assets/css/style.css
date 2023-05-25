@@ -170,6 +170,14 @@ section.introduction left-side span{
             flex-direction: column;
         }
     }
+
+    @media(max-width:576px){
+        .teqdimat .left-side{
+            padding-top: 25px;
+            padding-left: 15px;
+        }
+    }
+
 /* INTRODUCTION BITIR */
 /* TRUSTED SECTION START */
 .trusted-section h6{
@@ -273,6 +281,19 @@ letter-spacing: 1px;
     .services-section{
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .services-section h6{
+        padding-top: 15px;
+    }
+
+    .services-section h1{
+        font-size: 50px;
+    }
+
+    .services-cards-section{
+        padding-top: 40px;
+        padding-left: 40px;
     }
 }
 
@@ -430,6 +451,15 @@ letter-spacing: 1px;
         font-size: 25px;
         line-height: normal;
     }
+
+    .view-all-projects {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card{
+        padding-left: 18px;
+    }
 }
 
 /* PROJECTS SECTION END */
@@ -455,7 +485,7 @@ letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.left-side{
+.blog-section .left-side{
     padding-top: 76.27px;
 }
 
@@ -500,7 +530,7 @@ letter-spacing: 1px;
     padding-bottom: 35.73px;
 }
 
-.right-side{
+.blog-section .right-side{
     padding-top: 117.27px;
 }
 
@@ -531,7 +561,43 @@ span .metadata {
     line-height: 36px;
 }
 
+@media(max-width:576px){
+
+    .blog-section .right-side{
+        display: flex;
+        flex-direction:column;
+        padding-top: 50px; 
+    }
+
+    .blog-section{
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-section .left-side{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+    .blog-section .left-side h1{
+        padding-bottom: 20px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .blog-section .left-side h3{
+        font-size: 15px;
+        padding-left: 25px;
+
+    }
+
+}
+
 /* BLOGS SECTION END */
+
 
 /* PRODUCT DESIGNER START */
 
@@ -623,18 +689,44 @@ span .metadata {
 }
 
 @media(max-width:576px){
-    .right-photos , .center-photo{
+    .product-designer{
+        padding-left: 15px;
+        padding-right:30px;
+    }
+
+    .right-photos{
+        align-items: center;
+    }
+
+
+    .left-photo , .center-photo{
         display: none;
     }
-    
-    .product-designer{
-        padding-left: 30px;
+
+
+    .designer-photos{
+        padding-top: 20px;
+        padding-left: 25px;
     }
+
 
     .product-designer .top-side{
         text-align: center;
         flex-direction: column;
-        padding-left: 60px;
+        padding-left: 20px;
+        align-items: center;
+    }
+
+    .product-designer .top-side h1{
+        padding-top: 15px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+
+    .product-designer .top-side p {
+        padding-top: 10px;
     }
 }
 
@@ -803,7 +895,7 @@ span .metadata {
 .thestreet .teqdimatj .left-side{
    padding-left: 113px;
    padding-top: 85px;
-  min-width: 486px;
+   /* min-width: 450px; */
 }
 
 .thestreet .teqdimatj .left-side img{
@@ -863,6 +955,7 @@ span .metadata {
 
 .thestreet .teqdimatj .right-side{
     padding-left: 142px;
+    padding-top: 100px;
 }
 
 /* THE STREET SECTION END */
@@ -907,7 +1000,7 @@ span .metadata {
     padding-top: 30.18px;
     display: flex;
     justify-content: space-between;
-    width: 565px;
+    width: 555px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7); ;
     padding-bottom: 49.82px;
 }
